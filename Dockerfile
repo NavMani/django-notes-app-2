@@ -4,6 +4,7 @@ WORKDIR /app/backend
 
 COPY requirements.txt /app/backend
 RUN apt-get update
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/backend
 
